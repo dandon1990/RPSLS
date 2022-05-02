@@ -58,3 +58,69 @@ function generateComputerChoice(){
 
     checkResult();
 }
+
+/**
+ * Checks the result between the choices and determines a winner 
+ * based on the selection of the user and the computer's random choice
+ */
+function checkResult() {
+    let comWeapon = computerChoiceDisplay.innerHTML;
+    let userWeapon = playerChoiceDisplay.innerHTML;
+    let rock = 'Rock <i class="fas fa-hand-rock"></i>'
+    let paper = 'Paper <i class="fas fa-hand-paper"></i>'
+    let scissors = 'Scissors <i class="fas fa-hand-scissors"></i>'
+    let lizard = 'Lizard <i class="fas fa-hand-lizard"></i>'
+    let spock = 'Spock <i class="fas fa-hand-spock"></i>'
+
+
+    if (comWeapon === userWeapon) {
+        resultDisplay.innerHTML = 'Tie, try again!'
+    } else if (userWeapon === rock && comWeapon === paper) {
+        resultDisplay.innerHTML = 'You Lose!'
+        incrementComputerScore();
+        checkScore();
+    } else if (userWeapon === rock && comWeapon === spock) {
+        resultDisplay.innerHTML = 'You Lose!'
+        incrementComputerScore();
+        checkScore();
+    } else if (userWeapon === paper && comWeapon === scissors) {
+        resultDisplay.innerHTML = 'You Lose!'
+        incrementComputerScore();
+        checkScore();
+    } else if (userWeapon === paper && comWeapon === lizard) {
+        resultDisplay.innerHTML = 'You Lose!'
+        incrementComputerScore();
+        checkScore();
+    } else if (userWeapon === scissors && comWeapon === rock) {
+        resultDisplay.innerHTML = 'You Lose!'
+        incrementComputerScore();
+        checkScore();
+    } else if (userWeapon === scissors && comWeapon === spock) {
+        resultDisplay.innerHTML = 'You Lose!'
+        incrementComputerScore();
+        checkScore();
+    } else if (userWeapon === lizard && comWeapon === scissors) {
+        resultDisplay.innerHTML = 'You Lose!'
+        incrementComputerScore();
+        checkScore();
+    } else if (userWeapon === lizard && comWeapon === rock) {
+        resultDisplay.innerHTML = 'You Lose!'
+        incrementComputerScore();
+        checkScore();
+    } else if (userWeapon === spock && comWeapon === paper) {
+        resultDisplay.innerHTML = 'You Lose!'
+        incrementComputerScore();
+        checkScore();
+    } else if (userWeapon === spock && comWeapon === lizard) {
+        resultDisplay.innerHTML = 'You Lose!'
+        incrementComputerScore();
+        checkScore();
+    } else {
+        resultDisplay.innerHTML = 'You Win!'
+        checkScore();
+        incrementPlayerScore();
+        checkScore();
+        
+    }
+    
+};
