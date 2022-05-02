@@ -29,3 +29,32 @@ for (let button of buttons) {
     })
 
 }
+
+
+/** Generates a random choice of the 5 possible weapons using a 
+ * random number generator
+ */
+
+function generateComputerChoice(){
+    
+    // generates random number between 0 and 4
+    const randNum = Math.floor(Math.random() * 5);
+    
+    
+    
+    if (randNum === 0) {
+        computerChoice = 'Rock <i class="fas fa-hand-rock"></i>'
+    } else if (randNum === 1) {
+        computerChoice = 'Paper <i class="fas fa-hand-paper"></i>'
+    } else if (randNum === 2) {
+        computerChoice = 'Scissors <i class="fas fa-hand-scissors"></i>'
+    } else if (randNum === 3) {
+        computerChoice = 'Lizard <i class="fas fa-hand-lizard"></i>'
+    } else if (randNum === 4) {
+        computerChoice = 'Spock <i class="fas fa-hand-spock"></i>'
+    }
+
+    computerChoiceDisplay.innerHTML = computerChoice;
+
+    checkResult();
+}
