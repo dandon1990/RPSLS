@@ -117,10 +117,43 @@ function checkResult() {
         checkScore();
     } else {
         resultDisplay.innerHTML = 'You Win!'
-        checkScore();
         incrementPlayerScore();
         checkScore();
         
     }
     
 };
+
+
+
+//Increments the user's score if they win
+function incrementPlayerScore() {
+    let oldScore = parseInt(document.getElementById("player-score").innerText);
+    document.getElementById("player-score").innerText = ++oldScore;
+};
+
+
+//Increments the computer's score if the user loses
+function incrementComputerScore() {
+    let oldScore = parseInt(document.getElementById("computer-score").innerText);
+    document.getElementById("computer-score").innerText = ++oldScore;
+}
+
+/**
+ * Checks the score of the game 
+ * Reveals You Win div if the user reaches 10 first
+ * Reveals You Lose div if the computer reaches 10 first
+ */
+function checkScore() {
+    let playerScore = document.getElementById('player-score').innerHTML;
+    let winDiv = document.getElementById('win');
+    let computerScore = document.getElementById('computer-score').innerHTML;
+    let loseDiv = document.getElementById('lose');
+    
+    if (playerScore === '10') {
+
+        winDiv.style.display = "block";
+    } else if (computerScore === '10') {
+        loseDiv.style.display = "block"
+    }
+}
