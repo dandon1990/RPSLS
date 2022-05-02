@@ -64,3 +64,45 @@ img {
     text-align: center;
 }
 
+/* Rules and table */
+
+#rules {
+    float: left;
+    margin: 25px ;
+}
+
+#rules ul {
+    margin-left: 30px;
+}
+
+table, th, td{
+    margin: 35px;
+    width: 50%;
+    border: 1px solid #39ff14;
+    text-align: center;
+}
+
+/* footer */
+
+footer {
+    height: 30px;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #39ff14;    
+}
+
+.social-networks i:hover {
+    color: #fafafa;
+}
