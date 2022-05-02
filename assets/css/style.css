@@ -137,3 +137,30 @@ span{
     width: 40%;
     margin: 5%;
 }
+
+/* Hidden divs*/
+
+#win {
+    display: none;
+    margin: 15px;
+    
+}
+
+#lose {
+    display: none;
+    margin: 15px;
+
+}
+
+.result-message {
+    color: red;
+    text-align: center;
+}
+.result-message  a {
+    color: red;
+    text-decoration: none;
+}
+
+.result-message  a:hover {
+    color: #fafafa;
+}
