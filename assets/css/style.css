@@ -106,3 +106,34 @@ footer {
 .social-networks i:hover {
     color: #fafafa;
 }
+
+/* Game area and buttons */
+.game-area {
+    text-align: center;
+    clear: both;
+}
+
+.choices {
+    margin-top: 40px;
+}
+
+.bttn {
+    width: 150px;
+    height: 150px;
+    font-family: "JetBrains Mono", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #2f2f2f;
+    border-radius: 50%;
+    box-shadow: 10px 10px #2f2f2f;
+    margin: 15px;
+}
+
+.bttn:hover {
+    color: #39ff14;
+}
+
+span{
+    width: 40%;
+    margin: 5%;
+}
