@@ -1,0 +1,22 @@
+/* Body */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: "JetBrains Mono", sans-serif;
+    background-color: #2f4f2f;
+    color: #39ff14;
+}
+
+/* Headings */
+
+h1{
+    font-size: 250%;
+    float: left;
+    margin: 25px 0 50px 35px;
+}
+
