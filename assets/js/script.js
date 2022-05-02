@@ -43,15 +43,15 @@ function generateComputerChoice(){
     
     
     if (randNum === 0) {
-        computerChoice = 'Rock <i class="fas fa-hand-rock"></i>'
+        computerChoice = 'Rock <i class="fas fa-hand-rock"></i>';
     } else if (randNum === 1) {
-        computerChoice = 'Paper <i class="fas fa-hand-paper"></i>'
+        computerChoice = 'Paper <i class="fas fa-hand-paper"></i>';
     } else if (randNum === 2) {
-        computerChoice = 'Scissors <i class="fas fa-hand-scissors"></i>'
+        computerChoice = 'Scissors <i class="fas fa-hand-scissors"></i>';
     } else if (randNum === 3) {
-        computerChoice = 'Lizard <i class="fas fa-hand-lizard"></i>'
+        computerChoice = 'Lizard <i class="fas fa-hand-lizard"></i>';
     } else if (randNum === 4) {
-        computerChoice = 'Spock <i class="fas fa-hand-spock"></i>'
+        computerChoice = 'Spock <i class="fas fa-hand-spock"></i>';
     }
 
     computerChoiceDisplay.innerHTML = computerChoice;
@@ -66,57 +66,57 @@ function generateComputerChoice(){
 function checkResult() {
     let comWeapon = computerChoiceDisplay.innerHTML;
     let userWeapon = playerChoiceDisplay.innerHTML;
-    let rock = 'Rock <i class="fas fa-hand-rock"></i>'
-    let paper = 'Paper <i class="fas fa-hand-paper"></i>'
-    let scissors = 'Scissors <i class="fas fa-hand-scissors"></i>'
-    let lizard = 'Lizard <i class="fas fa-hand-lizard"></i>'
-    let spock = 'Spock <i class="fas fa-hand-spock"></i>'
+    let rock = 'Rock <i class="fas fa-hand-rock"></i>';
+    let paper = 'Paper <i class="fas fa-hand-paper"></i>';
+    let scissors = 'Scissors <i class="fas fa-hand-scissors"></i>';
+    let lizard = 'Lizard <i class="fas fa-hand-lizard"></i>';
+    let spock = 'Spock <i class="fas fa-hand-spock"></i>';
 
 
     if (comWeapon === userWeapon) {
-        resultDisplay.innerHTML = 'Tie, try again!'
+        resultDisplay.innerHTML = 'Tie, try again!';
     } else if (userWeapon === rock && comWeapon === paper) {
-        resultDisplay.innerHTML = 'You Lose!'
+        resultDisplay.innerHTML = 'You Lose!';
         incrementComputerScore();
         checkScore();
     } else if (userWeapon === rock && comWeapon === spock) {
-        resultDisplay.innerHTML = 'You Lose!'
+        resultDisplay.innerHTML = 'You Lose!';
         incrementComputerScore();
         checkScore();
     } else if (userWeapon === paper && comWeapon === scissors) {
-        resultDisplay.innerHTML = 'You Lose!'
+        resultDisplay.innerHTML = 'You Lose!';
         incrementComputerScore();
         checkScore();
     } else if (userWeapon === paper && comWeapon === lizard) {
-        resultDisplay.innerHTML = 'You Lose!'
+        resultDisplay.innerHTML = 'You Lose!';
         incrementComputerScore();
         checkScore();
     } else if (userWeapon === scissors && comWeapon === rock) {
-        resultDisplay.innerHTML = 'You Lose!'
+        resultDisplay.innerHTML = 'You Lose!';
         incrementComputerScore();
         checkScore();
     } else if (userWeapon === scissors && comWeapon === spock) {
-        resultDisplay.innerHTML = 'You Lose!'
+        resultDisplay.innerHTML = 'You Lose!';
         incrementComputerScore();
         checkScore();
     } else if (userWeapon === lizard && comWeapon === scissors) {
-        resultDisplay.innerHTML = 'You Lose!'
+        resultDisplay.innerHTML = 'You Lose!';
         incrementComputerScore();
         checkScore();
     } else if (userWeapon === lizard && comWeapon === rock) {
-        resultDisplay.innerHTML = 'You Lose!'
+        resultDisplay.innerHTML = 'You Lose!';
         incrementComputerScore();
         checkScore();
     } else if (userWeapon === spock && comWeapon === paper) {
-        resultDisplay.innerHTML = 'You Lose!'
+        resultDisplay.innerHTML = 'You Lose!';
         incrementComputerScore();
         checkScore();
     } else if (userWeapon === spock && comWeapon === lizard) {
-        resultDisplay.innerHTML = 'You Lose!'
+        resultDisplay.innerHTML = 'You Lose!';
         incrementComputerScore();
         checkScore();
     } else {
-        resultDisplay.innerHTML = 'You Win!'
+        resultDisplay.innerHTML = 'You Win!';
         incrementPlayerScore();
         checkScore();
         
@@ -154,6 +154,6 @@ function checkScore() {
 
         winDiv.style.display = "block";
     } else if (computerScore === '10') {
-        loseDiv.style.display = "block"
+        loseDiv.style.display = "block";
     }
 }
