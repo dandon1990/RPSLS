@@ -130,7 +130,7 @@ function checkResult() {
 function incrementPlayerScore() {
     let oldScore = parseInt(document.getElementById("player-score").innerText);
     document.getElementById("player-score").innerText = ++oldScore;
-};
+}
 
 
 //Increments the computer's score if the user loses
