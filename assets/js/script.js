@@ -8,16 +8,16 @@ const resultDisplay = document.getElementById('result');
 // Get the button elements and event listeners to them
 for (let button of buttons) {
     button.addEventListener('click', function () {
-        
-        
-        
+
+
+
         if (this.getAttribute("data-type") === "0") {
             playerChoiceDisplay.innerHTML = 'Rock <i class="fas fa-hand-rock"></i>';
         } else if (this.getAttribute("data-type") === "1") {
             playerChoiceDisplay.innerHTML = 'Paper <i class="fas fa-hand-paper"></i>';
         } else if (this.getAttribute("data-type") === "2") {
             playerChoiceDisplay.innerHTML = 'Scissors <i class="fas fa-hand-scissors"></i>';
-        } else if (this.getAttribute('data-type') === "3"){
+        } else if (this.getAttribute('data-type') === "3") {
             playerChoiceDisplay.innerHTML = 'Lizard <i class="fas fa-hand-lizard"></i>';
         } else if (this.getAttribute('data-type') === "4") {
             playerChoiceDisplay.innerHTML = 'Spock <i class="fas fa-hand-spock"></i>';
@@ -35,13 +35,13 @@ for (let button of buttons) {
  * random number generator
  */
 
-function generateComputerChoice(){
-    
+function generateComputerChoice() {
+
     // generates random number between 0 and 4
     const randNum = Math.floor(Math.random() * 5);
     var computerChoice;
-    
-    
+
+
     if (randNum === 0) {
         computerChoice = 'Rock <i class="fas fa-hand-rock"></i>';
     } else if (randNum === 1) {
@@ -119,9 +119,9 @@ function checkResult() {
         resultDisplay.innerHTML = 'You Win!';
         incrementPlayerScore();
         checkScore();
-        
+
     }
-    
+
 }
 
 
@@ -149,7 +149,7 @@ function checkScore() {
     let winDiv = document.getElementById('win');
     let computerScore = document.getElementById('computer-score').innerHTML;
     let loseDiv = document.getElementById('lose');
-    
+
     if (playerScore === '10') {
 
         winDiv.style.display = "block";
