@@ -14,7 +14,7 @@ body {
 
 /* Headings */
 
-h1 {
+h1{
     font-size: 250%;
     float: left;
     margin: 25px 0 50px 35px;
@@ -26,7 +26,7 @@ nav {
     display: inline-block;
     float: right;
     line-height: 75px;
-
+    
 }
 
 #navigation li {
@@ -68,16 +68,14 @@ img {
 
 #rules {
     float: left;
-    margin: 25px;
+    margin: 25px ;
 }
 
 #rules ul {
     margin-left: 30px;
 }
 
-table,
-th,
-td {
+table, th, td{
     margin: 35px;
     width: 50%;
     border: 1px solid #39ff14;
@@ -94,7 +92,7 @@ footer {
     text-align: center;
 }
 
-.social-networks>li {
+.social-networks > li {
     display: inline;
 }
 
@@ -102,7 +100,7 @@ footer {
     font-size: 160%;
     margin: 1%;
     padding: 5%;
-    color: #39ff14;
+    color: #39ff14;    
 }
 
 .social-networks i:hover {
@@ -135,7 +133,7 @@ footer {
     color: #39ff14;
 }
 
-span {
+span{
     width: 40%;
     margin: 5%;
 }
@@ -144,8 +142,7 @@ span {
 
 #win {
     display: none;
-    margin: 15px;
-
+    margin: 15px; 
 }
 
 #lose {
@@ -157,36 +154,35 @@ span {
     color: red;
     text-align: center;
 }
-
-.result-message a {
+.result-message  a {
     color: red;
     text-decoration: none;
 }
 
-.result-message a:hover {
+.result-message  a:hover {
     color: #fafafa;
 }
 
 /* Media queries */
 
 @media screen and (max-width: 1100px) {
-    .bttn {
+    .bttn{
         width: 90px;
         height: 90px;
     }
 
     h1 {
-        font-size: 200%;
-        margin: 25px 0 10px 35px;
+       font-size: 200%;
+       margin: 25px 0 10px 35px;
     }
-
+    
 }
 
 @media screen and (max-width: 970px) {
     h1 {
         font-size: 150%;
     }
-
+    
 
     nav {
         margin-right: 38%;
@@ -194,7 +190,7 @@ span {
         margin-bottom: 30px;
     }
 
-
+    
 }
 
 @media screen and (max-width: 675px) {
@@ -202,7 +198,7 @@ span {
         font-size: 100%;
     }
 
-    .choices h2 {
+    .choices h2{
         font-size: 100%;
         margin: 10px;
     }
@@ -217,8 +213,7 @@ span {
     .bttn {
         margin: 5px;
     }
-
-    .choices {
+    .choices{
         margin-top: 5px;
     }
 
