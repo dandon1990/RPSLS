@@ -26,7 +26,7 @@ for (let button of buttons) {
 
         //Calls the function for the computer generated choice
         generateComputerChoice();
-    })
+    });
 
 }
 
@@ -122,7 +122,7 @@ function checkResult() {
         
     }
     
-};
+}
 
 
 
