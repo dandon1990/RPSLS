@@ -39,7 +39,7 @@ function generateComputerChoice(){
     
     // generates random number between 0 and 4
     const randNum = Math.floor(Math.random() * 5);
-    
+    var computerChoice;
     
     
     if (randNum === 0) {
