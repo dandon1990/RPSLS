@@ -170,6 +170,7 @@ Live link can be found here - https://dandon1990.github.io/RPSLS/
 
 ### Images
 * The hero image was taken from [PngKey](https://www.pngkey.com/)
+* [Fav Icon](https://favicon.io/) 
 
 
 ### Fonts and Icons
